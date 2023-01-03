@@ -11,13 +11,15 @@ This is a tool written in python that allows for users to </br> make symbolic li
  # <p align="center"> Requirements </p>
  
  This tool supports:
-* Any v4.0 Kernel Linux Distribution (Recommended!)
+* Any v4.0 Kernel Linux Distribution (Recommended)
 * MacOS Yosemite and Higher
 * Windows 10/11
  
  # <p align="center"> How to Download </p>
  
 <img src="https://github.com/Lin8x/Symbolic-Link-Generator/blob/main/readMeImages/ReadMeBackgroundLine-Lin8x.png?raw=true" width="100%" height="5">
+
+Head to the Releases section for more information or run it using [Python](https://www.python.org/).
 
  # <p align="center"> License </p>
  
