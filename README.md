@@ -1,28 +1,79 @@
-<img src="https://github.com/Lin8x/Symbolic-Link-Generator/blob/main/readMeImages/ReadMeBackgroundLine-Lin8x.png?raw=true" width="100%" height="5">
+<h1>Symbolic Link Generator</h1>
 
-# <p align="center"> Symbolic-Link-Generator </p>
+<p>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+</p>
 
-Welcome to Symbolic-Link-Generator!
+<p>
+  This is a simple Symbolic Link Generator written in Python using Tkinter. It provides a graphical user interface (GUI) for generating symbolic links to directories and files.
+</p>
 
-This is a tool written in python that allows for users to </br> make symbolic links for folders, directors, or files. </br> This tool also allows you to move those files to any location of your choice!
+<h2>Features</h2>
 
-<img src="https://github.com/Lin8x/Symbolic-Link-Generator/blob/main/readMeImages/ReadMeBackgroundLine-Lin8x.png?raw=true" width="100%" height="5">
- 
- # <p align="center"> Requirements </p>
- 
- This tool supports:
-* Any v4.0 Kernel Linux Distribution (Recommended)
-* MacOS Yosemite and Higher
-* Windows 10/11
- 
- # <p align="center"> How to Download </p>
- 
-<img src="https://github.com/Lin8x/Symbolic-Link-Generator/blob/main/readMeImages/ReadMeBackgroundLine-Lin8x.png?raw=true" width="100%" height="5">
+<ul>
+  <li>Browse and select folders to create symbolic links to the entire directory.</li>
+  <li>Browse and select individual files to create symbolic links.</li>
+  <li>Supports both absolute and relative paths for symbolic links.</li>
+</ul>
 
-Head to the [Releases](https://github.com/tegaidogun/Symbolic-Link-Generator/releases) section for more information or run it using [Python](https://www.python.org/).
+<h2>Prerequisites</h2>
 
- # <p align="center"> License </p>
- 
- This source code falls under the M.I.T License. Please read [here](https://github.com/Lin8x/Symbolic-Link-Generator/blob/main/LICENSE.md) for more information.
+<ul>
+  <li>Python 3.6 or above</li>
+  <li>Tkinter library</li>
+</ul>
 
-<img src="https://github.com/Lin8x/Symbolic-Link-Generator/blob/main/readMeImages/ReadMeBackgroundLine-Lin8x.png?raw=true" width="100%" height="5">
+<h2>Installation</h2>
+
+<ol>
+  <li>Clone the repository:</li>
+</ol>
+
+<pre><code>git clone https://github.com/tegaidogun/Symbolic-Link-Generator.git
+</code></pre>
+
+<ol start="2">
+  <li>Navigate to the project directory:</li>
+</ol>
+
+<pre><code>cd Symbolic-Link-Generator
+</code></pre>
+
+<ol start="3">
+  <li>Install the required dependencies:</li>
+</ol>
+
+<pre><code>pip install -r requirements.txt
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Run the <code>main.py</code> file to launch the Symbolic Link Generator:</p>
+
+<pre><code>python main.py
+</code></pre>
+
+<p>The application will open a dialog box where you can browse for folders or files to create symbolic links.</p>
+
+<h2>License</h2>
+
+<p>This project is licensed under the terms of the MIT License. See the <a href="LICENSE">LICENSE</a> file for more information.</p>
+
+<h2>Contributing</h2>
+
+<p>Contributions are welcome! Please refer to the <a href="CONTRIBUTING.md">CONTRIBUTING</a> file for guidelines on how to contribute to this project.</p>
+
+<h2>Issues</h2>
+
+<p>If you encounter any problems or have suggestions, please open an issue on the <a href="https://github.com/tegaidogun/Symbolic-Link-Generator/issues">GitHub repository</a>.</p>
+
+<h2>Contact</h2>
+
+<p>For any inquiries or questions, you can reach out to the project author:</p>
+
+<ul>
+  <li>Oghenetega Eric Idgoun</li>
+  <li>Email: otegaid@gmail.com</li>
+</ul>
+
+<p>Enjoy creating symbolic links with the Symbolic Link Generator!</p>
