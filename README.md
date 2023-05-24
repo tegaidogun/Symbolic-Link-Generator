@@ -23,6 +23,13 @@
   <li>Tkinter library</li>
 </ul>
 
+## System Dependencies
+
+This application requires `python3-tk` to be installed. On Debian-based systems, you can install it using the following command:
+
+<pre><code>sudo apt-get install python3-tk
+</code></pre>
+
 <h2>Installation</h2>
 
 <ol>
