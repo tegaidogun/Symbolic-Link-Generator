@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, filedialog
+from tkinter import ttk, filedialog, PhotoImage
 from symlink.symbolic_link_generator import GenerateSymbolicLink
 import sys
 
@@ -21,6 +21,8 @@ class MyApp():
         self.window.geometry("600x400")
         self.window.title("Symbolic Link Generator")
         self.window.protocol("WM_DELETE_WINDOW", self.parent.quit)
+        icon = PhotoImage(file='./icon.png')
+        self.window.iconphoto(False, icon)  # Set the window icon
 
         self.create_widgets()
 
@@ -28,6 +30,13 @@ class MyApp():
         # create frame to hold the widgets
         frame = ttk.Frame(self.window, padding="20")
         frame.pack(fill="both", expand=True)  # fill window
+
+        # create and pack the icon
+        icon = PhotoImage(file='./icon.png')
+        icon_resized = icon.subsample(3, 3)  # Reduce the size of the icon by a factor of 3
+        icon_label = ttk.Label(frame, image=icon_resized)
+        icon_label.image = icon_resized  # keep a reference to avoid garbage collection
+        icon_label.place(x=0, y=0)  # Place the icon at top-left corner with a little padding from the edges
 
         # create Browse for Folder button
         self.browse_for_folder_button = ttk.Button(frame, text="Browse for Folder", command=self.browse_for_folder)
