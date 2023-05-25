@@ -1,1 +1,2 @@
 setuptools~=60.2.0
+pyinstaller~=4.7.1
