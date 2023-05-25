@@ -1,48 +1,55 @@
-<h1>Building the Symbolic Link Generator</h1>
+<h1>Building Symbolic Link Generator</h1>
 
-<p>This document provides step-by-step instructions on how to build the Symbolic Link Generator application for different operating systems.</p>
+<p>This document provides instructions on how to build Symbolic Link Generator for different operating systems. The build process may vary depending on the operating system and environment settings.</p>
 
-<h2>Prerequisites</h2>
-
+<h2>General Requirements</h2>
 <ul>
-  <li>Python 3.6 or above</li>
-  <li>PyInstaller</li>
-  <li>Setuptools</li>
-  <li>Tkinter library</li>
+    <li>Python 3.6 or above</li>
+    <li>Tkinter library</li>
+    <li><code>setuptools</code> Python package</li>
+    <li><code>PyInstaller</code> Python package</li>
 </ul>
 
-<h2>Installation of Dependencies</h2>
+<h2>Building for Windows</h2>
+<ol>
+    <li>Ensure Python and pip are installed and available in your PATH.</li>
+    <li>Install the required dependencies by running <code>pip install -r requirements.txt</code> in the command prompt.</li>
+    <li>Run the build script with <code>python build.py</code>. The script will use PyInstaller to build the executable.</li>
+    <li>The executable will be created in the <code>dist</code> directory.</li>
+</ol>
 
-<p>Before you start, make sure all dependencies are installed. You can install them by running:</p>
+<h2>Building for macOS</h2>
+<ol>
+    <li>Ensure Python and pip are installed and available in your PATH.</li>
+    <li>Install the required dependencies by running <code>pip install -r requirements.txt</code> in the terminal.</li>
+    <li>Run the build script with <code>python build.py</code>. The script will use PyInstaller to build the executable.</li>
+    <li>The executable will be created in the <code>dist</code> directory.</li>
+</ol>
 
-<pre><code>pip install -r requirements.txt
-</code></pre>
+<h2>Building for Linux</h2>
+<ol>
+    <li>Ensure Python and pip are installed and available in your PATH.</li>
+    <li>Install the required dependencies by running <code>pip install -r requirements.txt</code> in the terminal.</li>
+    <li>Run the build script with <code>python build.py</code>. The script will use PyInstaller to build the executable.</li>
+    <li>The executable will be created in the <code>dist</code> directory.</li>
+    <li>To add the application to your system menu, create a <code>.desktop</code> file:
+        <ul>
+            <li>Create a new file with the <code>.desktop</code> extension.</li>
+            <li>Include the necessary information in the file, e.g.:
+                <pre><code>
+                [Desktop Entry]
+                Type=Application
+                Name=Symbolic Link Generator
+                Exec=&lt;path_to_your_executable&gt;
+                Icon=&lt;path_to_your_icon&gt;
+                </code></pre>
+            </li>
+            <li>Make the .desktop file executable with <code>chmod +x &lt;your_desktop_file&gt;</code>.</li>
+            <li>Place the .desktop file in the appropriate directory. If you want it to be accessible to all users, place it in <code>/usr/share/applications</code>. For user-specific access, place it in <code>~/.local/share/applications</code>.</li>
+        </ul>
+    </li>
+</ol>
 
-<h2>Building the Executable</h2>
+<h2>Troubleshooting</h2>
 
-<p>Once all the prerequisites are installed, you can build the executable with PyInstaller. PyInstaller will package the Python script and all its dependencies into a single executable file.</p>
-
-<h3>For Windows:</h3>
-
-<p>Open a terminal in the project directory and run the following command:</p>
-
-<pre><code>pyinstaller --onefile --windowed main.py
-</code></pre>
-
-<h3>For macOS:</h3>
-
-<p>Open a terminal in the project directory and run the following command:</p>
-
-<pre><code>pyinstaller --onefile --windowed --icon=app.icns main.py
-</code></pre>
-
-<h3>For Linux:</h3>
-
-<p>Open a terminal in the project directory and run the following command:</p>
-
-<pre><code>pyinstaller --onefile --windowed main.py
-</code></pre>
-
-<h2>Output</h2>
-
-<p>The built executable will be located in the "dist" folder which PyInstaller creates in the project directory. You can now distribute this file to users who want to use the Symbolic Link Generator application without having to install Python or any dependencies.</p>
+<p>If you encounter any issues during the build process, please refer to the <a href="https://github.com/your_repo/issues">issues page on GitHub</a>.</p>

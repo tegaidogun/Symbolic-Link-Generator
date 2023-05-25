@@ -1,14 +1,26 @@
-import PyInstaller.__main__
 import os
+import sys
+import subprocess
 
-package_name = "Symbolic-Link-Generator" # Name of your application
-file_to_compile = "main.py" # Entry point of your application
+def build():
+    # Detect the operating system
+    platform = sys.platform
 
-PyInstaller.__main__.run([
-    '--name=%s' % package_name,
-    '--onefile',
-    '--windowed',
-    '--add-binary=%s' % os.path.join('dialog', '*.py;dialog'),
-    '--add-binary=%s' % os.path.join('symlink', '*.py;symlink'),
-    file_to_compile,
-])
+    # The PyInstaller command for Windows
+    if platform == "win32":
+        command = ['pyinstaller', '--onefile', '--windowed', '--icon=icon.png', '--name=Symbolic Link Generator', 'main.py']
+    # The PyInstaller command for macOS, including the icon file
+    elif platform == "darwin":
+        command = ['pyinstaller', '--onefile', '--windowed', '--icon=icon.png', '--name=Symbolic Link Generator', 'main.py']
+    # The PyInstaller command for Linux
+    elif platform == "linux" or platform == "linux2":
+        command = ['pyinstaller', '--onefile', '--windowed', '--icon=icon.png', '--name=Symbolic Link Generator', 'main.py']
+    else:
+        print("Unsupported platform:", platform)
+        return
+
+    # Run the PyInstaller command
+    subprocess.run(command)
+
+if __name__ == "__main__":
+    build()
