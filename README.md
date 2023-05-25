@@ -4,6 +4,8 @@
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 
+![Screenshot from 2023-05-25 18-29-54](https://github.com/tegaidogun/Symbolic-Link-Generator/assets/63559796/49849934-64ca-4482-8aa8-e3d0478413dd)
+
 <p>
   This is a simple Symbolic Link Generator written in Python using Tkinter. It provides a graphical user interface (GUI) for generating symbolic links to directories and files.
 </p>
