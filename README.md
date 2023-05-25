@@ -23,14 +23,14 @@
   <li>Tkinter library</li>
 </ul>
 
-## System Dependencies
+<h2>System Dependencies</h2>
 
-This application requires `python3-tk` to be installed. On Debian-based systems, you can install it using the following command:
+<p>This application requires `python3-tk` to be installed. On Debian-based systems, you can install it using the following command:</p>
 
 <pre><code>sudo apt-get install python3-tk
 </code></pre>
 
-<h2>Installation</h2>
+<h2>Setup</h2>
 
 <ol>
   <li>Clone the repository:</li>
@@ -61,6 +61,10 @@ This application requires `python3-tk` to be installed. On Debian-based systems,
 </code></pre>
 
 <p>The application will open a dialog box where you can browse for folders or files to create symbolic links.</p>
+
+<h2>Building the Executable</h2>
+
+<p>To build the executable version of this application, you will need PyInstaller. Instructions for building the executable can be found in the <a href="BUILDING.md">BUILDING.md</a> file.</p>
 
 <h2>License</h2>
 
