@@ -14,7 +14,7 @@ def build():
         command = ['pyinstaller', '--onefile', '--windowed', '--icon=icon.png', '--name=Symbolic Link Generator', 'main.py']
     # The PyInstaller command for Linux
     elif platform == "linux" or platform == "linux2":
-        command = ['pyinstaller', '--onefile', '--windowed', '--icon=icon.png', '--name=Symbolic Link Generator', 'main.py']
+        command = ['pyinstaller', '--onefile', '--windowed', '--name=Symbolic Link Generator', 'main.py']
     else:
         print("Unsupported platform:", platform)
         return
