@@ -36,8 +36,7 @@
         <ul>
             <li>Create a new file with the <code>.desktop</code> extension.</li>
             <li>Include the necessary information in the file, e.g.:
-                <pre><code>
-                [Desktop Entry]
+                <pre><code>[Desktop Entry]
                 Type=Application
                 Name=Symbolic Link Generator
                 Exec=&lt;path_to_your_executable&gt;
