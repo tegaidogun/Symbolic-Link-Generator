@@ -37,11 +37,10 @@
             <li>Create a new file with the <code>.desktop</code> extension.</li>
             <li>Include the necessary information in the file, e.g.:
                 <pre><code>[Desktop Entry]
-                Type=Application
-                Name=Symbolic Link Generator
-                Exec=&lt;path_to_your_executable&gt;
-                Icon=&lt;path_to_your_icon&gt;
-                </code></pre>
+Type=Application
+Name=Symbolic Link Generator
+Exec=&lt;path_to_your_executable&gt;
+Icon=&lt;path_to_your_icon&gt;</code></pre>
             </li>
             <li>Make the .desktop file executable with <code>chmod +x &lt;your_desktop_file&gt;</code>.</li>
             <li>Place the .desktop file in the appropriate directory. If you want it to be accessible to all users, place it in <code>/usr/share/applications</code>. For user-specific access, place it in <code>~/.local/share/applications</code>.</li>
